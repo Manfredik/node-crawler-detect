@@ -1,11 +1,13 @@
 #### Installation
-
+``
+npm install crawler-detect
+``
 
 #### Usage
 
 ```javascript
 
-const CrawlerDetect = require('node-crawler-detect');
+const CrawlerDetect = require('crawler-detect');
 
 // Pass a user agent as a string
 if (CrawlerDetect.isCrawler('Mozilla/5.0 (compatible; Sosospider/2.0; +http://help.soso.com/webspider.htm)')) {
@@ -13,8 +15,8 @@ if (CrawlerDetect.isCrawler('Mozilla/5.0 (compatible; Sosospider/2.0; +http://he
 }
 
 // Get the name of the bot that matched (if any)
-CrawlerDetect.isCrawler('Mozilla/5.0 (Linux; Android 4.2.1; CUBOT ONE Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36', (isCrawler, userAgent, crawlerName) => {
-    console.log(isCrawler, userAgent, crawlerName);
+CrawlerDetect.isCrawler('Mozilla/5.0 (compatible; Sosospider/2.0; +http://help.soso.com/webspider.htm)', (isCrawler, userAgent, crawlerName) => {
+    console.log(isCrawler, userAgent, crawlerName); // true, 'Mozilla/5.0 (compatible; Sosospider/2.0; +http://help.soso.com/webspider.htm)', 'Sosospider'
 });
 
 // use in express

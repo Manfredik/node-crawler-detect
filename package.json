@@ -1,0 +1,28 @@
+{
+  "name": "crawler-detect",
+  "version": "1.0.0",
+  "description": "```javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manfredik/node-crowler-detect.git"
+  },
+  "keywords": [
+    "crawler",
+    "detect",
+    "express",
+    "middleware"
+  ],
+  "author": "Denis Malyavkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Manfredik/node-crowler-detect/issues"
+  },
+  "homepage": "https://github.com/Manfredik/node-crowler-detect#readme"
+}
